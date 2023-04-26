@@ -66,8 +66,10 @@ dependencies {
   // For < 0.71, this will be from the local maven repo
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
-  implementation 'com.facebook.react:react-native:0.71.0-rc.0'
-  implementation fileTree(dir: 'libs', include: ['*.aar'])
+  implementation "com.facebook.react:react-native:+"
+  implementation files('libs/TMXBehavioralBiometrics-RL-6.3-77.aar')
+  implementation files('libs/TMXProfiling-RL-6.3-77.aar')
+  implementation files('libs/TMXProfilingConnections-RL-6.3-77.aar')
 }
 
 if (isNewArchitectureEnabled()) {

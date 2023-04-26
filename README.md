@@ -1,6 +1,6 @@
 # react-native-cybersource-fingerprint
 
-A react-native plugin for cybersource fingerprint sdk
+Package to use with the cybersource fingrprint
 
 ## Installation
 

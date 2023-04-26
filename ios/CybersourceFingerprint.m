@@ -1,28 +1,19 @@
-#import "CybersourceFingerprint.h"
+#import <React/RCTBridgeModule.h>
 
-@implementation CybersourceFingerprint
-RCT_EXPORT_MODULE()
+@interface RCT_EXTERN_MODULE(CybersourceFingerprint, NSObject)
 
-// Example method
-// See // https://reactnative.dev/docs/native-modules-ios
-RCT_REMAP_METHOD(multiply,
-                 multiplyWithA:(double)a withB:(double)b
+RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
+
+RCT_EXPORT_METHOD(config:(NSString *)orgId
+                  fpsUrl:(NSString *)fingerprintServerUrl
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+
++ (BOOL)requiresMainQueueSetup
 {
-    NSNumber *result = @(a * b);
-
-    resolve(result);
+  return NO;
 }
-
-
-// Don't compile this code when we build for the old architecture.
-#ifdef RCT_NEW_ARCH_ENABLED
-- (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
-    (const facebook::react::ObjCTurboModule::InitParams &)params
-{
-    return std::make_shared<facebook::react::NativeCybersourceFingerprintSpecJSI>(params);
-}
-#endif
 
 @end

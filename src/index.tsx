@@ -17,11 +17,6 @@ const CybersourceFingerprint = NativeModules.CybersourceFingerprint
       }
     );
 
-type response = {
-  status: Boolean;
-  message: string;
-};
-
 export function multiply(a: number, b: number): Promise<number> {
   return CybersourceFingerprint.multiply(a, b);
 }
@@ -29,10 +24,10 @@ export function multiply(a: number, b: number): Promise<number> {
 export function config(
   orgId: string,
   fingerprintServerUrl: string
-): Promise<response> {
+): Promise<any> {
   return CybersourceFingerprint.config(orgId, fingerprintServerUrl);
 }
 
-export function startProfiling(sessionId: string): Promise<string> {
+export function startProfiling(sessionId: string): Promise<any> {
   return CybersourceFingerprint.startProfiling(sessionId);
 }

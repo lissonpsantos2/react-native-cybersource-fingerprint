@@ -3,8 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		11F5219129F992CB0036D7C0 /* RLTMXProfiling.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F5218E29F992CB0036D7C0 /* RLTMXProfiling.xcframework */; };
+		11F5219229F992CB0036D7C0 /* RLTMXBehavioralBiometrics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F5218F29F992CB0036D7C0 /* RLTMXBehavioralBiometrics.xcframework */; };
+		11F5219329F992CB0036D7C0 /* RLTMXProfilingConnections.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F5219029F992CB0036D7C0 /* RLTMXProfilingConnections.xcframework */; };
+		F4FF95D7245B92E800C19C63 /* CybersourceFingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* CybersourceFingerprint.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -19,9 +26,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		11F5218E29F992CB0036D7C0 /* RLTMXProfiling.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RLTMXProfiling.xcframework; path = Frameworks/RLTMXProfiling.xcframework; sourceTree = "<group>"; };
+		11F5218F29F992CB0036D7C0 /* RLTMXBehavioralBiometrics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RLTMXBehavioralBiometrics.xcframework; path = Frameworks/RLTMXBehavioralBiometrics.xcframework; sourceTree = "<group>"; };
+		11F5219029F992CB0036D7C0 /* RLTMXProfilingConnections.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RLTMXProfilingConnections.xcframework; path = Frameworks/RLTMXProfilingConnections.xcframework; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libCybersourceFingerprint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCybersourceFingerprint.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* CybersourceFingerprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybersourceFingerprint.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* CybersourceFingerprint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybersourceFingerprint.m; sourceTree = "<group>"; };
+		F4FF95D5245B92E700C19C63 /* CybersourceFingerprint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CybersourceFingerprint-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4FF95D6245B92E800C19C63 /* CybersourceFingerprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CybersourceFingerprint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +40,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F5219129F992CB0036D7C0 /* RLTMXProfiling.xcframework in Frameworks */,
+				11F5219229F992CB0036D7C0 /* RLTMXBehavioralBiometrics.xcframework in Frameworks */,
+				11F5219329F992CB0036D7C0 /* RLTMXProfilingConnections.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11F5218729F9920B0036D7C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11F5218F29F992CB0036D7C0 /* RLTMXBehavioralBiometrics.xcframework */,
+				11F5218E29F992CB0036D7C0 /* RLTMXProfiling.xcframework */,
+				11F5219029F992CB0036D7C0 /* RLTMXProfilingConnections.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -46,8 +70,10 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* CybersourceFingerprint.h */,
+				F4FF95D6245B92E800C19C63 /* CybersourceFingerprint.swift */,
+				11F5218729F9920B0036D7C0 /* Frameworks */,
 				B3E7B5891CC2AC0600A0062D /* CybersourceFingerprint.m */,
+				F4FF95D5245B92E700C19C63 /* CybersourceFingerprint-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4FF95D7245B92E800C19C63 /* CybersourceFingerprint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +171,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -195,6 +223,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -213,6 +242,7 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -223,12 +253,16 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CybersourceFingerprint;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CybersourceFingerprint-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -239,6 +273,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CybersourceFingerprint;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CybersourceFingerprint-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

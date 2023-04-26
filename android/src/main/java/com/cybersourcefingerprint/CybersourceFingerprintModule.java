@@ -11,16 +11,15 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 
-import com.threatmetrix.TrustDefender.TMXConfig;
-import com.threatmetrix.TrustDefender.TMXProfiling;
-import com.threatmetrix.TrustDefender.TMXProfilingOptions;
-import com.threatmetrix.TrustDefender.TMXProfilingHandle;
-import com.threatmetrix.TrustDefender.TMXEndNotifier;
+import com.threatmetrix.TrustDefender.RL.*;
+import com.threatmetrix.TrustDefender.RL.TMXProfilingConnections.*;
+import com.threatmetrix.TrustDefender.RL.TMXProfiling.*;
+import com.threatmetrix.TrustDefender.RL.TMXBehavioralBiometricsModule.*;
 
 @ReactModule(name = CybersourceFingerprintModule.NAME)
 public class CybersourceFingerprintModule extends ReactContextBaseJavaModule {
-  private Context applicationContext;
   public static final String NAME = "CybersourceFingerprint";
+  private Context applicationContext;
 
   public CybersourceFingerprintModule(ReactApplicationContext reactContext) {
     super(reactContext);
@@ -40,7 +39,6 @@ public class CybersourceFingerprintModule extends ReactContextBaseJavaModule {
   public void multiply(double a, double b, Promise promise) {
     promise.resolve(a * b);
   }
-
   @ReactMethod
   public void config(String orgId, String fingerprintServerUrl, Promise promise) {
     try {
