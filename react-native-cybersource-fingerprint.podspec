@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 
   s.dependency "React-Core"
 
-  # Don't install the dependencies when we run `pod install` in the old architecture.
+  s.ios.vendored_frameworks = 'ios/Frameworks/RLTMXBehavioralBiometrics.xcframework', 'ios/Frameworks/RLTMXProfiling.xcframework', 'ios/Frameworks/RLTMXProfilingConnections.xcframework'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-framework RLTMXBehavioralBiometrics -framework RLTMXProfiling -framework RLTMXProfilingConnections' }
+
   if ENV['RCT_NEW_ARCH_ENABLED'] == '1' then
     s.compiler_flags = folly_compiler_flags + " -DRCT_NEW_ARCH_ENABLED=1"
     s.pod_target_xcconfig    = {
