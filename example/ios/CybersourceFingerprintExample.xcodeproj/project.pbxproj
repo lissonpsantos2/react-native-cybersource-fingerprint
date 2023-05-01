@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		357CCBDA7F5B2E9D16BD79C2 /* libPods-CybersourceFingerprintExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3143275F6DF9EB2233F26340 /* libPods-CybersourceFingerprintExample.a */; };
+		4BF19559268B57B6A5821488 /* libPods-CybersourceFingerprintExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274CB7E89880F0A2BB46DC74 /* libPods-CybersourceFingerprintExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D903C848BEBBDE228868713A /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4E4FB47B83429FB0C47BA7 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a */; };
+		CA9A3F1BA7277ABBB9E39EA0 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C0245E57CA2EDB9BEE5DA8 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,37 +26,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		111F810929F9849900DB2778 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* CybersourceFingerprintExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CybersourceFingerprintExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CybersourceFingerprintExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CybersourceFingerprintExampleTests.m; sourceTree = "<group>"; };
-		00FA555789C24799442A025A /* Pods-CybersourceFingerprintExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.release.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.release.xcconfig"; sourceTree = "<group>"; };
-		11A42A9729F9E34100FE096A /* CybersourceFingerprintExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CybersourceFingerprintExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* CybersourceFingerprintExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CybersourceFingerprintExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CybersourceFingerprintExample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = CybersourceFingerprintExample/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CybersourceFingerprintExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CybersourceFingerprintExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CybersourceFingerprintExample/main.m; sourceTree = "<group>"; };
-		1BFDF9DE4C8C54ADDF2FBB4B /* Pods-CybersourceFingerprintExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.debug.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.debug.xcconfig"; sourceTree = "<group>"; };
-		1C36D0B627F70AAACBEC3062 /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3084C958BB7668362EDF2D2A /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		3143275F6DF9EB2233F26340 /* libPods-CybersourceFingerprintExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CybersourceFingerprintExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E4E4FB47B83429FB0C47BA7 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25AD07DBC42259943C170A9C /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		274CB7E89880F0A2BB46DC74 /* libPods-CybersourceFingerprintExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CybersourceFingerprintExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4655DD0B9257B4B569452373 /* Pods-CybersourceFingerprintExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.release.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CybersourceFingerprintExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1C0245E57CA2EDB9BEE5DA8 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4DE26E5D070D7B72DDCFFB /* Pods-CybersourceFingerprintExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.debug.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.debug.xcconfig"; sourceTree = "<group>"; };
+		BFACC35026B4CF762F2850BC /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -65,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D903C848BEBBDE228868713A /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a in Frameworks */,
+				CA9A3F1BA7277ABBB9E39EA0 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				357CCBDA7F5B2E9D16BD79C2 /* libPods-CybersourceFingerprintExample.a in Frameworks */,
+				4BF19559268B57B6A5821488 /* libPods-CybersourceFingerprintExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,13 +83,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		111F812D29F989D400DB2778 /* TMXFrameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TMXFrameworks;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* CybersourceFingerprintExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				3143275F6DF9EB2233F26340 /* libPods-CybersourceFingerprintExample.a */,
-				7E4E4FB47B83429FB0C47BA7 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a */,
+				274CB7E89880F0A2BB46DC74 /* libPods-CybersourceFingerprintExample.a */,
+				A1C0245E57CA2EDB9BEE5DA8 /* libPods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,14 +116,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				111F812D29F989D400DB2778 /* TMXFrameworks */,
 				13B07FAE1A68108700A75B9A /* CybersourceFingerprintExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* CybersourceFingerprintExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				11A42A9729F9E34100FE096A /* CybersourceFingerprintExample-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -163,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1BFDF9DE4C8C54ADDF2FBB4B /* Pods-CybersourceFingerprintExample.debug.xcconfig */,
-				00FA555789C24799442A025A /* Pods-CybersourceFingerprintExample.release.xcconfig */,
-				1C36D0B627F70AAACBEC3062 /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig */,
-				3084C958BB7668362EDF2D2A /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig */,
+				AA4DE26E5D070D7B72DDCFFB /* Pods-CybersourceFingerprintExample.debug.xcconfig */,
+				4655DD0B9257B4B569452373 /* Pods-CybersourceFingerprintExample.release.xcconfig */,
+				BFACC35026B4CF762F2850BC /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig */,
+				25AD07DBC42259943C170A9C /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -178,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CybersourceFingerprintExampleTests" */;
 			buildPhases = (
-				FAAAB1F3AC5A4CFC9DC04415 /* [CP] Check Pods Manifest.lock */,
+				4BE7F54BB8F3956CEBAAA9C1 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				4F4A25A8EF782133A24D4D0C /* [CP] Embed Pods Frameworks */,
-				7841524917A53035C08F96C1 /* [CP] Copy Pods Resources */,
+				76096CD4A5698151BD817508 /* [CP] Embed Pods Frameworks */,
+				336066EE29AB845A309AAC9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,15 +176,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CybersourceFingerprintExample" */;
 			buildPhases = (
-				2E60DF75CC579010566D5300 /* [CP] Check Pods Manifest.lock */,
+				964D05B3492184B31359FE2F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				111F810929F9849900DB2778 /* Embed Frameworks */,
-				85D36E936C919538C5CECD52 /* [CP] Embed Pods Frameworks */,
-				834961A884A6D0545F00A502 /* [CP] Copy Pods Resources */,
+				AD7184AA0C116681C89C3D79 /* [CP] Embed Pods Frameworks */,
+				21F9F0BF437C3948B58649E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,11 +204,10 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						LastSwiftMigration = 1420;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1420;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -291,7 +266,80 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		2E60DF75CC579010566D5300 /* [CP] Check Pods Manifest.lock */ = {
+		21F9F0BF437C3948B58649E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		336066EE29AB845A309AAC9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BE7F54BB8F3956CEBAAA9C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76096CD4A5698151BD817508 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		964D05B3492184B31359FE2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,58 +361,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4F4A25A8EF782133A24D4D0C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7841524917A53035C08F96C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		834961A884A6D0545F00A502 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85D36E936C919538C5CECD52 /* [CP] Embed Pods Frameworks */ = {
+		AD7184AA0C116681C89C3D79 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,28 +376,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FAAAB1F3AC5A4CFC9DC04415 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -455,10 +430,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C36D0B627F70AAACBEC3062 /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig */;
+			baseConfigurationReference = BFACC35026B4CF762F2850BC /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -477,19 +451,15 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CybersourceFingerprintExampleTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CybersourceFingerprintExample.app/CybersourceFingerprintExample";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3084C958BB7668362EDF2D2A /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig */;
+			baseConfigurationReference = 25AD07DBC42259943C170A9C /* Pods-CybersourceFingerprintExample-CybersourceFingerprintExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = CybersourceFingerprintExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -505,31 +475,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CybersourceFingerprintExampleTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CybersourceFingerprintExample.app/CybersourceFingerprintExample";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BFDF9DE4C8C54ADDF2FBB4B /* Pods-CybersourceFingerprintExample.debug.xcconfig */;
+			baseConfigurationReference = AA4DE26E5D070D7B72DDCFFB /* Pods-CybersourceFingerprintExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/Flipper-DoubleConversion/Frameworks\"",
-					"\"${PODS_ROOT}/Flipper-Glog/Frameworks\"",
-					"\"${PODS_ROOT}/OpenSSL-Universal/Frameworks\"",
-					"\"${PODS_ROOT}/hermes-engine/destroot/Library/Frameworks/universal\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-Glog\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built\"",
-				);
 				INFOPLIST_FILE = CybersourceFingerprintExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,29 +500,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CybersourceFingerprintExample;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "CybersourceFingerprintExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00FA555789C24799442A025A /* Pods-CybersourceFingerprintExample.release.xcconfig */;
+			baseConfigurationReference = 4655DD0B9257B4B569452373 /* Pods-CybersourceFingerprintExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/hermes-engine/destroot/Library/Frameworks/universal\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built\"",
-				);
 				INFOPLIST_FILE = CybersourceFingerprintExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -579,12 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CybersourceFingerprintExample;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "CybersourceFingerprintExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -623,7 +565,6 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -639,8 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -697,7 +637,6 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -706,8 +645,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",

@@ -1,5 +1,37 @@
 import { NativeModules, Platform } from 'react-native';
 
+const iosProfilingStatusMap: string[] = [
+  'TMXStatusCodeNotYet',
+  'TMXStatusCodeOk',
+  'TMXStatusCodeHostNotFoundError',
+  'TMXStatusCodeNetworkTimeoutError',
+  'TMXStatusCodeHostVerificationError',
+  'TMXStatusCodeInternalError',
+  'TMXStatusCodeInterruptedError',
+  'TMXStatusCodePartialProfile',
+  'TMXStatusCodeInvalidOrgID',
+  'TMXStatusCodeNotConfigured',
+  'TMXStatusCodeCertificateMismatch',
+];
+
+const androidProfilingStatusMap: string[] = [
+  'TMX_NotYet',
+  'TMX_OK',
+  'TMX_Connection_Error',
+  'TMX_HostNotFound_Error',
+  'TMX_NetworkTimeout_Error',
+  'TMX_HostVerification_Error',
+  'TMX_Internal_Error',
+  'TMX_Interrupted_Error',
+  'TMX_InvalidOrgID',
+  'TMX_ConfigurationError',
+  'TMX_Already_Initialised',
+  'TMX_EndNotifier_Not_Found',
+  'TMX_PartialProfile',
+  'TMX_Blocked',
+  'TMX_ThirdPartyLibrary_Not_Found',
+];
+
 const LINKING_ERROR =
   `The package 'react-native-cybersource-fingerprint' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
@@ -17,6 +49,13 @@ const CybersourceFingerprint = NativeModules.CybersourceFingerprint
       }
     );
 
+type profilingResponse = {
+  success: boolean;
+  statusCode: number;
+  sessionId: string;
+  statusDescription: string;
+};
+
 export function multiply(a: number, b: number): Promise<number> {
   return CybersourceFingerprint.multiply(a, b);
 }
@@ -28,6 +67,20 @@ export function config(
   return CybersourceFingerprint.config(orgId, fingerprintServerUrl);
 }
 
-export function startProfiling(sessionId: string): Promise<any> {
-  return CybersourceFingerprint.startProfiling(sessionId);
+export async function startProfiling(sessionId: string): Promise<profilingResponse> {
+  const profilingData = await CybersourceFingerprint.startProfiling(sessionId);
+
+  const profilingStatusMap =
+    Platform.OS === 'ios' ? iosProfilingStatusMap : androidProfilingStatusMap;
+  const mappedStatusDescription = profilingStatusMap[profilingData.status];
+
+  return {
+    success: profilingData.status === 1,
+    statusCode: profilingData.status,
+    sessionId: profilingData.sessionId,
+    statusDescription:
+      typeof mappedStatusDescription !== 'undefined'
+        ? mappedStatusDescription
+        : 'Unknown status',
+  };
 }
