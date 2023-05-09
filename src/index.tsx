@@ -63,7 +63,9 @@ export function config(
   return CybersourceFingerprint.config(orgId, fingerprintServerUrl);
 }
 
-export async function startProfiling(sessionId: string): Promise<profilingResponse> {
+export async function startProfiling(
+  sessionId: string
+): Promise<profilingResponse> {
   const profilingData = await CybersourceFingerprint.startProfiling(sessionId);
 
   const profilingStatusMap =

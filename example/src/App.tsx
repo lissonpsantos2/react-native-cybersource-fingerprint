@@ -7,8 +7,10 @@ import { config, startProfiling } from 'react-native-cybersource-fingerprint';
 const sessionId = uuidv4();
 
 export default function App() {
-  const [configStatus, setConfigStatus] = React.useState<string>('Configurando');
-  const [profilingStatus, setProfilingStatus] = React.useState<string>('Carregando...');
+  const [configStatus, setConfigStatus] =
+    React.useState<string>('Configurando');
+  const [profilingStatus, _setProfilingStatus] =
+    React.useState<string>('Carregando...');
 
   React.useEffect(() => {
     configure();
