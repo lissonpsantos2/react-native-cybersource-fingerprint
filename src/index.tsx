@@ -56,10 +56,6 @@ type profilingResponse = {
   statusDescription: string;
 };
 
-export function multiply(a: number, b: number): Promise<number> {
-  return CybersourceFingerprint.multiply(a, b);
-}
-
 export function config(
   orgId: string,
   fingerprintServerUrl: string

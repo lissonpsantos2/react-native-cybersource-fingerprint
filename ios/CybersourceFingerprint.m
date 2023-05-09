@@ -8,31 +8,18 @@ RLTMXProfiling *RLTMXProfilingInstance;
 
 RCT_EXPORT_MODULE()
 
-// Example method
-// See // https://reactnative.dev/docs/native-modules-ios
-RCT_REMAP_METHOD(multiply,
-                 multiplyWithA:(double)a withB:(double)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
-{
-    NSNumber *result = @(a * b);
-
-    resolve(result);
-}
-
-
 RCT_REMAP_METHOD(config,
                   withOrgId:(NSString *)orgId withServerUrl:(NSString *)serverUrl
                   withResolver:(RCTPromiseResolveBlock)resolve
                   withRejecter:(RCTPromiseRejectBlock)reject)
 {
     RLTMXProfilingConnections *profilingConnections = [[RLTMXProfilingConnections alloc] init];
-    
+
     profilingConnections.connectionTimeout = 20;
     profilingConnections.connectionRetryCount = 2;
-    
+
     RLTMXProfilingInstance = [RLTMXProfiling sharedInstance];
-    
+
     @try {
         [RLTMXProfilingInstance configure: @{
             RLTMXOrgID: orgId,
@@ -41,10 +28,10 @@ RCT_REMAP_METHOD(config,
             RLTMXProfilingConnectionsInstance: profilingConnections,
         }];
     } @catch (NSException *exception) {
-        reject(@"CybersourceFingerprint", @"Ocorreu um erro", nil);
+        reject(@"CybersourceFingerprint", @"ERROR", nil);
     }
-    
-    resolve(@"Configuração finalizada");
+
+    resolve(@"Config finished");
 }
 
 RCT_REMAP_METHOD(startProfiling,
@@ -62,7 +49,7 @@ RCT_REMAP_METHOD(startProfiling,
                 [result valueForKey:RLTMXProfileStatus]
                 integerValue
             ];
-            
+
             resolve(@{
                 @"sessionId": [result valueForKey:RLTMXSessionID],
                 @"status": @(statusCode),

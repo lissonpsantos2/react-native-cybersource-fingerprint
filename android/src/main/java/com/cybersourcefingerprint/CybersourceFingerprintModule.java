@@ -9,12 +9,11 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.module.annotations.ReactModule;
 
 import com.threatmetrix.TrustDefender.RL.*;
-import com.threatmetrix.TrustDefender.RL.TMXProfilingConnections.*;
-import com.threatmetrix.TrustDefender.RL.TMXProfiling.*;
-import com.threatmetrix.TrustDefender.RL.TMXBehavioralBiometricsModule.*;
 
 @ReactModule(name = CybersourceFingerprintModule.NAME)
 public class CybersourceFingerprintModule extends ReactContextBaseJavaModule {
@@ -32,13 +31,6 @@ public class CybersourceFingerprintModule extends ReactContextBaseJavaModule {
     return NAME;
   }
 
-
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  @ReactMethod
-  public void multiply(double a, double b, Promise promise) {
-    promise.resolve(a * b);
-  }
   @ReactMethod
   public void config(String orgId, String fingerprintServerUrl, Promise promise) {
     try {
@@ -47,14 +39,18 @@ public class CybersourceFingerprintModule extends ReactContextBaseJavaModule {
         .setFPServer(fingerprintServerUrl)
         .setContext(this.applicationContext);
       TMXProfiling.getInstance().init(config);
-      promise.resolve("Configuração completa");
     } catch (Exception e) {
       promise.reject(e);
     }
+
+    Log.i(this.NAME, "Config finished");
+    promise.resolve("Config finished");
   }
 
   @ReactMethod
   public void startProfiling(String sessionId, Promise promise) {
+    Log.i(this.NAME, "Profiling with sessionId: " + sessionId);
+
     TMXProfilingOptions options = new TMXProfilingOptions().setCustomAttributes(null);
     options.setSessionID(sessionId);
     TMXProfilingHandle profilingHandle = TMXProfiling.getInstance().profile(options, new CompletionNotifier(promise));
@@ -69,9 +65,11 @@ public class CybersourceFingerprintModule extends ReactContextBaseJavaModule {
     }
     @Override
     public void complete(TMXProfilingHandle.Result result) {
-      Log.i("PROFILE COMPLETED", "Profile completed with: " + result.getSessionID()+ " - "
-        + result.getStatus().name()+ " - " + result.getStatus().getDesc());
-      promise.resolve("asd");
+      WritableMap map = new WritableNativeMap();
+
+      map.putString("sessionId", result.getSessionID());
+      map.putInt("status", result.getStatus().ordinal());
+      promise.resolve(map);
     }
   }
 }
