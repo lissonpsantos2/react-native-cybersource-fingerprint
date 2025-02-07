@@ -1,10 +1,10 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { v4 as uuidv4 } from 'uuid';
 import { config, startProfiling } from 'react-native-cybersource-fingerprint';
+import uuid from 'react-native-uuid';
 
-const sessionId = uuidv4();
+const sessionId = uuid.v4();
 
 export default function App() {
   const [configStatus, setConfigStatus] =
@@ -18,13 +18,12 @@ export default function App() {
 
   async function configure() {
     const localConfigStatus = await config('1snn5n9w', 'h.online-metrix.net');
-    console.log(localConfigStatus);
 
     setConfigStatus(localConfigStatus);
 
     const localProfilingStatus = await startProfiling(`acqio_br${sessionId}`);
     console.log(localProfilingStatus);
-    // setProfilingStatus(localProfilingStatus);
+    _setProfilingStatus(localProfilingStatus.statusCode.toString());
   }
 
   return (
@@ -41,6 +40,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#ecf0f1',
   },
   box: {
     width: 60,

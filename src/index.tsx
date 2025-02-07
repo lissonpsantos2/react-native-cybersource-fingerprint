@@ -1,4 +1,4 @@
-import { NativeModules, Platform } from 'react-native';
+import { Platform } from 'react-native';
 
 const iosProfilingStatusMap: string[] = [
   'TMXStatusCodeNotYet',
@@ -32,49 +32,34 @@ const androidProfilingStatusMap: string[] = [
   'TMX_ThirdPartyLibrary_Not_Found',
 ];
 
-const LINKING_ERROR =
-  `The package 'react-native-cybersource-fingerprint' doesn't seem to be linked. Make sure: \n\n` +
-  Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
-  '- You rebuilt the app after installing the package\n' +
-  '- You are not using Expo Go\n';
-
-const CybersourceFingerprint = NativeModules.CybersourceFingerprint
-  ? NativeModules.CybersourceFingerprint
-  : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
-
-type profilingResponse = {
+export type ProfilingResponse = {
   success: boolean;
   statusCode: number;
   sessionId: string;
   statusDescription: string;
 };
 
+import CybersourceFingerprint from './NativeCybersourceFingerprint';
+
 export function config(
   orgId: string,
   fingerprintServerUrl: string
-): Promise<any> {
+): Promise<string> {
   return CybersourceFingerprint.config(orgId, fingerprintServerUrl);
 }
 
 export async function startProfiling(
   sessionId: string
-): Promise<profilingResponse> {
+): Promise<ProfilingResponse> {
   const profilingData = await CybersourceFingerprint.startProfiling(sessionId);
 
   const profilingStatusMap =
     Platform.OS === 'ios' ? iosProfilingStatusMap : androidProfilingStatusMap;
-  const mappedStatusDescription = profilingStatusMap[profilingData.status];
+  const mappedStatusDescription = profilingStatusMap[profilingData.statusCode];
 
   return {
-    success: profilingData.status === 1,
-    statusCode: profilingData.status,
+    success: profilingData.statusCode === 1,
+    statusCode: profilingData.statusCode,
     sessionId: profilingData.sessionId,
     statusDescription:
       typeof mappedStatusDescription !== 'undefined'
