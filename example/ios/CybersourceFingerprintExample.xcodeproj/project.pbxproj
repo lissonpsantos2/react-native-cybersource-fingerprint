@@ -11,7 +11,7 @@
 		70080C29FCAECB92DB00A386 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		98331ED396DB3F1B22B731C6 /* libPods-CybersourceFingerprintExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00F34287C0EFE3146A04440 /* libPods-CybersourceFingerprintExample.a */; };
+		996A8909881F7F8D61301817 /* libPods-CybersourceFingerprintExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54335B1C8D6037F84D4AFF1C /* libPods-CybersourceFingerprintExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +19,11 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CybersourceFingerprintExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CybersourceFingerprintExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = CybersourceFingerprintExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		22E9AF93D2A72AF8C00830BE /* Pods-CybersourceFingerprintExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.debug.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.debug.xcconfig"; sourceTree = "<group>"; };
+		2C826CFD0AEE76100FE7E445 /* Pods-CybersourceFingerprintExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.debug.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA2ED33C2F6F28171CB3CC4 /* Pods-CybersourceFingerprintExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.release.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.release.xcconfig"; sourceTree = "<group>"; };
+		54335B1C8D6037F84D4AFF1C /* libPods-CybersourceFingerprintExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CybersourceFingerprintExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CybersourceFingerprintExample/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CybersourceFingerprintExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9D9DB77F6BFD007D6421205F /* Pods-CybersourceFingerprintExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CybersourceFingerprintExample.release.xcconfig"; path = "Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample.release.xcconfig"; sourceTree = "<group>"; };
-		C00F34287C0EFE3146A04440 /* libPods-CybersourceFingerprintExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CybersourceFingerprintExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98331ED396DB3F1B22B731C6 /* libPods-CybersourceFingerprintExample.a in Frameworks */,
+				996A8909881F7F8D61301817 /* libPods-CybersourceFingerprintExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				C00F34287C0EFE3146A04440 /* libPods-CybersourceFingerprintExample.a */,
+				54335B1C8D6037F84D4AFF1C /* libPods-CybersourceFingerprintExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,8 +92,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				22E9AF93D2A72AF8C00830BE /* Pods-CybersourceFingerprintExample.debug.xcconfig */,
-				9D9DB77F6BFD007D6421205F /* Pods-CybersourceFingerprintExample.release.xcconfig */,
+				2C826CFD0AEE76100FE7E445 /* Pods-CybersourceFingerprintExample.debug.xcconfig */,
+				4AA2ED33C2F6F28171CB3CC4 /* Pods-CybersourceFingerprintExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -105,13 +105,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CybersourceFingerprintExample" */;
 			buildPhases = (
-				B885E1A293F36E90A7314B35 /* [CP] Check Pods Manifest.lock */,
+				F65DE27241B6ADCB7641C996 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				36B671D5366627300A8C02A7 /* [CP] Embed Pods Frameworks */,
-				8481952DBB1232EFADAC853C /* [CP] Copy Pods Resources */,
+				74509535E2324626C21312CA /* [CP] Embed Pods Frameworks */,
+				95ADD787F5C0C4EF6CD5D47E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +183,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		36B671D5366627300A8C02A7 /* [CP] Embed Pods Frameworks */ = {
+		74509535E2324626C21312CA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,7 +200,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8481952DBB1232EFADAC853C /* [CP] Copy Pods Resources */ = {
+		95ADD787F5C0C4EF6CD5D47E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,7 +217,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CybersourceFingerprintExample/Pods-CybersourceFingerprintExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B885E1A293F36E90A7314B35 /* [CP] Check Pods Manifest.lock */ = {
+		F65DE27241B6ADCB7641C996 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,7 +255,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E9AF93D2A72AF8C00830BE /* Pods-CybersourceFingerprintExample.debug.xcconfig */;
+			baseConfigurationReference = 2C826CFD0AEE76100FE7E445 /* Pods-CybersourceFingerprintExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -284,7 +284,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D9DB77F6BFD007D6421205F /* Pods-CybersourceFingerprintExample.release.xcconfig */;
+			baseConfigurationReference = 4AA2ED33C2F6F28171CB3CC4 /* Pods-CybersourceFingerprintExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
