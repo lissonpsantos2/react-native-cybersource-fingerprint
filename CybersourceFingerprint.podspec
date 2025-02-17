@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
                          "ios/Frameworks/RLTMXProfiling.xcframework",
                          "ios/Frameworks/RLTMXProfilingConnections.xcframework"
 
-  s.source_files = "ios/**/*.{h,m,mm,cpp}"
+  s.source_files = "ios/**/*.{m,mm,cpp}"
   s.private_header_files = "ios/generated/**/*.h"
 
   # Use install_modules_dependencies helper to install the dependencies if React Native version >=0.71.0.
