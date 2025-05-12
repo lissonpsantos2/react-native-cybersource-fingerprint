@@ -5,9 +5,9 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
 
-import android.util.Log;
+import android.util.Log
 
-import com.threatmetrix.TrustDefender.RL.*;
+import com.threatmetrix.TrustDefender.RL.*
 
 @ReactModule(name = CybersourceFingerprintModule.NAME)
 class CybersourceFingerprintModule(reactContext: ReactApplicationContext) :
